@@ -33,7 +33,7 @@ data "aws_ami" "vault_consul" {
   most_recent = true
 
   # If we change the AWS Account in which test are run, update this value.
-  owners = ["562637147889"]
+  owners = ["723280554673"]
 
   filter {
     name   = "virtualization-type"
@@ -42,12 +42,12 @@ data "aws_ami" "vault_consul" {
 
   filter {
     name   = "is-public"
-    values = ["true"]
+    values = ["false"]
   }
 
   filter {
     name   = "name"
-    values = ["vault-consul-ubuntu-*"]
+    values = ["vault-ubuntu-*"]
   }
 }
 
