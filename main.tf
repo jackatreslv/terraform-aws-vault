@@ -47,7 +47,7 @@ data "aws_ami" "vault_consul" {
 
   filter {
     name   = "name"
-    values = ["vault-ubuntu-*"]
+    values = ["vault-consul-ubuntu*"]
   }
 }
 
